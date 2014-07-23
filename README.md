@@ -54,4 +54,4 @@ fBodyGyroJerkMag
 
 For each of those values, the average and standard deviation are averaged separately for each person engaging in each activity.
 Eg, if one person walked up the stairs ten times, all rows for those ten observations are averaged together to create the output dataset.
-
+-std and -mean versions of each those columns, as well as activity_id, activity_name, and subject_id are in the output dataset.
