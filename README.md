@@ -32,26 +32,27 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
-
 (End text from features_info.txt.)
 
-For each of those values, the average and standard deviation are averaged separately for each person engaging in each activity.
+Permutations of each of these columns exist for -mean and -std (standard deviations) of each of these columns:
+
+* tBodyAcc-XYZ -- "the acceleration signal separated into body and gravity acceleration signals"
+* tGravityAcc-XYZ -- "the acceleration signal separated into body and gravity acceleration signals"
+* tBodyGyro-XYZ -- "the magnitude of these three-dimensional signals were calculated using the Euclidean norm"
+* tBodyGyroJerk-XYZ -- "linear acceleration and angular velocity were derived in time to obtain Jerk signals"
+* tBodyAccJerk-XYZ -- "linear acceleration and angular velocity were derived in time to obtain Jerk signals"
+* tBodyAccMag -- "the magnitude of these three-dimensional signals were calculated using the Euclidean norm"
+* tGravityAccMag -- "the magnitude of these three-dimensional signals were calculated using the Euclidean norm"
+* tBodyAccJerkMag -- "the magnitude of these three-dimensional signals were calculated using the Euclidean norm"
+* tBodyGyroMag -- "the magnitude of these three-dimensional signals were calculated using the Euclidean norm"
+* tBodyGyroJerkMag -- "the magnitude of these three-dimensional signals were calculated using the Euclidean norm"
+* fBodyAcc-XYZ --  Fast Fourier Transform (FFT) applied to the "t" version above
+* fBodyAccJerk-XYZ -- Fast Fourier Transform (FFT) applied to the "t" version above
+* fBodyGyro-XYZ -- Fast Fourier Transform (FFT) applied to the "t" version above
+* fBodyAccMag -- Fast Fourier Transform (FFT) applied to the "t" version above
+* fBodyAccJerkMag -- Fast Fourier Transform (FFT) applied to the "t" version above
+* fBodyGyroMag -- Fast Fourier Transform (FFT) applied to the "t" version above
+* fBodyGyroJerkMag -- Fast Fourier Transform (FFT) applied to the "t" version above
+
+For each of observation of those values, the average and standard deviation are averaged separately for each person engaging in each activity.
 Eg, if one person walked up the stairs ten times, all rows for those ten observations are averaged together to create the output dataset.
--std and -mean versions of each those columns, as well as activity_id, activity_name, and subject_id are in the output dataset.
